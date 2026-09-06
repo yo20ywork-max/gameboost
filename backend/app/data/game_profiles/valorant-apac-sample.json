@@ -1,0 +1,26 @@
+{
+  "id": "valorant-apac-sample",
+  "name": "VALORANT｜APAC 範例 Profile",
+  "publisher": "Riot Games",
+  "recommended_mode": "full",
+  "description": "Riot 伺服器 IP 會變，正式商用前應以實測與官方/營運資料維護。此 profile 先建議使用全流量加速。",
+  "cidrs": [],
+  "domains": [
+    "playvalorant.com",
+    "riotgames.com"
+  ],
+  "ports": [
+    {
+      "proto": "udp",
+      "range": "7000-8000"
+    },
+    {
+      "proto": "tcp",
+      "range": "80,443"
+    }
+  ],
+  "dns": [
+    "1.1.1.1"
+  ],
+  "maintenance": "範例，不保證涵蓋 Riot 所有遊戲伺服器。"
+}

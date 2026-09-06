@@ -1,0 +1,9 @@
+# Backend server
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+
+# Node server
+ufw allow 51820/udp
+# For MVP only; production should restrict agent to backend IP or private network.
+ufw allow from BACKEND_PUBLIC_IP to any port 8787 proto tcp

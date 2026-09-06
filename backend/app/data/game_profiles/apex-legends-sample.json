@@ -1,0 +1,26 @@
+{
+  "id": "apex-legends-sample",
+  "name": "Apex Legends｜範例 Profile",
+  "publisher": "Electronic Arts",
+  "recommended_mode": "full",
+  "description": "EA/Respawn 節點可能因區域與平台而變動。建議商用時使用節點實測和客服回報維護。",
+  "cidrs": [],
+  "domains": [
+    "ea.com",
+    "respawn.com"
+  ],
+  "ports": [
+    {
+      "proto": "udp",
+      "range": "1024-65535"
+    },
+    {
+      "proto": "tcp",
+      "range": "80,443"
+    }
+  ],
+  "dns": [
+    "1.1.1.1"
+  ],
+  "maintenance": "範例；全流量模式比 split profile 更穩。"
+}

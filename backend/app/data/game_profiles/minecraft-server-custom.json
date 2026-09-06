@@ -1,0 +1,27 @@
+{
+  "id": "minecraft-server-custom",
+  "name": "Minecraft｜自訂伺服器範本",
+  "publisher": "Mojang / Community",
+  "recommended_mode": "split",
+  "description": "把你的 Minecraft 伺服器 IP 或網域填進 cidrs/domains，就能只加速那台伺服器。",
+  "cidrs": [
+    "203.0.113.10/32"
+  ],
+  "domains": [
+    "example-minecraft-server.invalid"
+  ],
+  "ports": [
+    {
+      "proto": "tcp",
+      "range": "25565"
+    },
+    {
+      "proto": "udp",
+      "range": "19132"
+    }
+  ],
+  "dns": [
+    "1.1.1.1"
+  ],
+  "maintenance": "把 203.0.113.10/32 換成你的伺服器 IP。"
+}

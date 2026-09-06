@@ -1,0 +1,23 @@
+{
+  "id": "generic-full-tunnel",
+  "name": "任何遊戲｜全流量加速",
+  "publisher": "GameBoost",
+  "recommended_mode": "full",
+  "description": "適合任何遊戲。所有 IPv4 流量都走加速節點，成功率最高，但也會影響一般上網流量。",
+  "cidrs": [],
+  "domains": [],
+  "ports": [
+    {
+      "proto": "udp",
+      "range": "1-65535"
+    },
+    {
+      "proto": "tcp",
+      "range": "1-65535"
+    }
+  ],
+  "dns": [
+    "1.1.1.1"
+  ],
+  "maintenance": "永遠可用，不依賴遊戲伺服器 IP 資料庫。"
+}

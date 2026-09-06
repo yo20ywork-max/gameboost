@@ -1,0 +1,15 @@
+services:
+  backend:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ../backend:/app
+      - gameboost-db:/app/data
+    environment:
+      GAMEBOOST_DB: /app/data/gameboost.sqlite3
+      GAMEBOOST_JWT_SECRET: change-this-in-production
+    command: sh -c "pip install -r requirements.txt && python scripts/seed_demo.py && uvicorn app.main:app --host 0.0.0.0 --port 8080"
+    ports:
+      - "127.0.0.1:8080:8080"
+volumes:
+  gameboost-db:

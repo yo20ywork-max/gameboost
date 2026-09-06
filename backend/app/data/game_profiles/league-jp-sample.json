@@ -1,0 +1,26 @@
+{
+  "id": "league-jp-sample",
+  "name": "League of Legends｜日服範例 Profile",
+  "publisher": "Riot Games",
+  "recommended_mode": "full",
+  "description": "LOL/Riot 服務會使用多個登入、聊天、遊戲、CDN endpoint；建議正式商用以全流量模式或維護完整 profile。",
+  "cidrs": [],
+  "domains": [
+    "leagueoflegends.com",
+    "riotgames.com"
+  ],
+  "ports": [
+    {
+      "proto": "tcp",
+      "range": "80,443,2099,5223,5222,8393-8400"
+    },
+    {
+      "proto": "udp",
+      "range": "5000-5500"
+    }
+  ],
+  "dns": [
+    "1.1.1.1"
+  ],
+  "maintenance": "範例，不保證完整。"
+}

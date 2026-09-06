@@ -1,0 +1,17 @@
+[Unit]
+Description=GameBoost Node Agent
+After=network-online.target wg-quick@wg0.service
+Wants=network-online.target
+
+[Service]
+Environment=WG_INTERFACE=wg0
+Environment=AGENT_SECRET=change-this-agent-secret
+Environment=GAMEBOOST_NODE_STATE=/var/lib/gameboost-node
+WorkingDirectory=/opt/gameboost-node
+ExecStart=/opt/gameboost-node/.venv/bin/uvicorn agent:app --host 0.0.0.0 --port 8787
+Restart=always
+RestartSec=3
+User=root
+
+[Install]
+WantedBy=multi-user.target
